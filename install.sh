@@ -111,3 +111,7 @@ sed -i $'s/)\s*updatePiholeFunc/) unsupportedFunc/g' /usr/local/bin/pihole
 touch /.piholeFirstBoot
 
 echo 'Docker install successful'
+
+apt-get -y install avahi-utils
+
+echo 'avahi-utils successful'
