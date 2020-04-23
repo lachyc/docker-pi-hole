@@ -64,6 +64,9 @@ setup_lighttpd_bind "$ServerIP"
 setup_blocklists
 test_configs
 
+/etc/init.d/dbus start
+/etc/init.d/avahi-daemon start
+
 [ -f /.piholeFirstBoot ] && rm /.piholeFirstBoot
 
 echo " ::: Docker start setup complete"
